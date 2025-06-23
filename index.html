@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solitario IA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Solitario IA 🃏</h1>
+  
+  <input type="file" id="fileInput" accept="image/*" />
+  <canvas id="canvas"></canvas>
+
+  <div id="acciones">
+    <button onclick="reiniciar()">Reiniciar</button>
+    <button onclick="descargar()">Descargar solución</button>
+    <button onclick="mostrarAyuda()">¿Cómo funciona esto?</button>
+  </div>
+
+  <div id="output"></div>
+  <div id="ayuda" style="display:none;">
+    <h2>¿Cómo usar?</h2>
+    <ol>
+      <li>Sube una imagen clara de tu partida de solitario.</li>
+      <li>El sistema reconocerá las cartas (valor y palo).</li>
+      <li>Se mostrarán sugerencias de jugadas posibles.</li>
+      <li>Puedes reiniciar o descargar la solución.</li>
+    </ol>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
